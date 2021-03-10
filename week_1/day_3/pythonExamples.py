@@ -1,7 +1,7 @@
 # Variable
 # nameOfVariable = assignedValueToVariable
 # String === "", "word", "1", "functionName"
-greeting = "Hello World"
+greeting = "Hello DigitalCrafts Fam"
 # Integer === whole number, 1, 23, 934234, 9392
 classSize = 23
 # Float === 4.5, 4.55656565, 4.71234654736567658763856543678888886834567890
@@ -25,3 +25,4 @@ sumOfNumbers = 1 + 1
 # print("string" == "string")
 print("Hello World")
 print("My name is Frankie Ferbrache. I live in Atlanta.")
+print(classSize)
