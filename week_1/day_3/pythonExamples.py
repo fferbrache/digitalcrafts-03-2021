@@ -24,3 +24,4 @@ sumOfNumbers = 1 + 1
 # print(sumOfNumbers == 2)
 # print("string" == "string")
 print("Hello World")
+print("My name is Frankie Ferbrache. I live in Atlanta.")
