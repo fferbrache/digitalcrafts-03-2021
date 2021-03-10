@@ -14,12 +14,24 @@ allowed_operators = {
 }
 # Input 1
 first_num = input("Please input a number (ex: 2)")
+length_first_num = len(first_num)
+while (length_first_num < 1):
+    first_num = input("Please input a number (ex: 2)")
+    length_first_num = len(first_num)
 
 # Input 2
 symbol = input("Please enter the operand (ex. +, -, *, /)")
+length_symbol = len(symbol)
+while (length_symbol < 1):
+    symbol = input("Please enter the operand (ex. +, -, *, /)")
+    length_symbol = len(symbol)
 
 # Input 3
 second_num = input("Please input a second whole number (ex: 2)")
+length_second_num = len(second_num)
+while (length_second_num < 1):
+    second_num = input("Please input a second whole number (ex: 2)")
+    length_second_num = len(second_num)
 
 result = allowed_operators[symbol](float(first_num), float(second_num))
 print(result)
