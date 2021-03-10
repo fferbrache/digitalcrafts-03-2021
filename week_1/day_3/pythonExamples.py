@@ -23,6 +23,11 @@ sumOfNumbers = 1 + 1
 # {"FavoriteColor": "Red"}
 # print(sumOfNumbers == 2)
 # print("string" == "string")
+# List
+somethingToCallIt = ['students', 23, True]
+# Dictionary, reassigning variable
+somethingToCallIt = {"helloPythonWorld": 23, "WeAreStudents": 24.5}
 print("Hello World")
 print("My name is Frankie Ferbrache. I live in Atlanta.")
 print(classSize)
+print(somethingToCallIt)
