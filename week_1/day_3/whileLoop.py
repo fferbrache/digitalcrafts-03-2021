@@ -1,12 +1,14 @@
 first_name = input("What is your first name?")
 length_first_name = len(first_name)
-while(length_first_name < 1):
+while (length_first_name < 1):
     first_name = input("What is your first name?")
+    length_first_name = len(first_name)
 
 last_name = input("What is your last name?")
 length_last_name = len(last_name)
-while(length_last_name < 1):
+while (length_last_name < 1):
     last_name = input("What is your last name?")
+    length_last_name = len(first_name)
 
 print("The user name is %s %s" % (first_name, last_name))
 
