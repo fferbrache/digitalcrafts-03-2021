@@ -10,6 +10,9 @@ floatExample = 2.323
 variableName = True
 # Name, assignment operator (=), value that I am assigning
 sumOfNumbers = 1 + 1
+dirPlusTeacher = 4
+sumOfTeachers = dirPlusTeacher + 1
+sumOfClass = dirPlusTeacher + classSize
 # List [], in JS they are called arrays, sequence of values followed by [value1,value2, etc]
 # [1, 2, 3]
 # ["strings", "string2", "blah blah blah"]
@@ -25,10 +28,12 @@ sumOfNumbers = 1 + 1
 # print("string" == "string")
 # List
 somethingToCallIt = ['students', 23, True]
+print("The size of our class is " + str(sumOfClass))
+print("The size of our class is", sumOfClass)
 # Dictionary, reassigning variable
-somethingToCallIt = {"helloPythonWorld": 23, "WeAreStudents": 24.5}
-print("Hello World")
-print("My name is Frankie Ferbrache. I live in Atlanta.")
-print(classSize)
-print(somethingToCallIt)
-variableNameThree = 3
+# somethingToCallIt = {"helloPythonWorld": 23, "WeAreStudents": 24.5}
+# print("Hello World")
+# print("My name is Frankie Ferbrache. I live in Atlanta.")
+# print(classSize)
+# print(somethingToCallIt)
+# variableNameThree = 3
