@@ -70,12 +70,30 @@
 
 
 # length of string
-str = input("Please enter a string")
+# str = input("Please enter a string")
 
 
-def length_of_string(str):
-    str_length = len(str)
-    return str_length
+# def length_of_string(str):
+#     str_length = len(str)
+#     return str_length
 
 
-print(length_of_string(str))
+# print(length_of_string(str))
+
+# SCOPE
+# SCOPE is about having access to certain things in your program
+# Global scope, means anyone can access this variable, function, from anywhere inside your program
+# Local scope, or LEXICAL SCOPE, means you only have access to certain variables INSIDE of a specific place
+
+# Global variable outside of the function
+askUsertoType = input("Type in a word: ")
+askUsertoTypeAgain = input("Type in another word: ")
+
+
+def printWhatUserTyped(firstMessageTyped, sedondMessageTyped):
+    # Local Variable inside of the function
+    combinedMessage = firstMessageTyped + " " + sedondMessageTyped
+    return print(combinedMessage)
+
+
+printWhatUserTyped(askUsertoType, askUsertoTypeAgain)
