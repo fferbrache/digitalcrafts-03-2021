@@ -23,20 +23,47 @@ Press 3 to view all tasks
 
 Press q to quit
     """
+
     return print(message)
+
+
+def addFunction():
+    toDoDictionary = {}
+    taskToAdd = input("What task would you like to add?")
+    priorityOfTask = input("What priority is this? (high, medium, low)")
+
+    # How do we add a "title" key and a "priority" value
+    toDoDictionary["title"] = taskToAdd
+    toDoDictionary["priority"] = priorityOfTask
+    toDoList.append(toDoDictionary)
+    print(toDoList)
+    return print("I added * %s * to your list" % taskToAdd)
+
+
+def delFunction():
+    return
+
+
+def viewFunction():
+    return
 
 
 def determineTask(choice):
     whatTheyChose = ""
-    # if (userChoices == "1"):
-    #     continue
-    # elif (userChoices == "2"):
-    #     continue
+    if (choice == "1"):
+        whatTheyChose = addFunction()
+    elif (choice == "2"):
+        whatTheyChose = ""
+
+    else:
+        print("Bad key")
+
     # elif (userChoices == "3"):
-    #     continue
+
+    # elif (userChoices == "q"):
+
     # else:
-    #     break
-    print(choice)
+
     whatTheyChose = choice
     return whatTheyChose
 
