@@ -3,7 +3,7 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 number_list = []
-for number in range(1, 1001):
+for number in range(1, 1000):
     if (number % 3 == 0):
         number_list.append(number)
     elif (number % 5 == 0):
