@@ -40,12 +40,27 @@ def addFunction():
     return print("I added * %s * to your list" % taskToAdd)
 
 
-def delFunction():
-    return
-
-
 def viewFunction():
-    return
+    count = 1
+    print("Here are your todos")
+    print("====================")
+    for task in toDoList:
+        print(" %d. %s = %s " % (count, task["title"], task["priority"]))
+        count += 1
+    print("====================")
+    return print("Here ya go")
+
+
+def delFunction():
+    print("Here is your todos")
+    viewFunction()
+    taskToDelete = int(
+        input("What task would you like to delete (Choose the index)\n"))
+    # toDoList.pop(taskToDelete - 1)
+    taskToDeleteIndex = taskToDelete - 1
+    taskThatIsGettingDeleted = toDoList[taskToDeleteIndex]
+    del toDoList[taskToDeleteIndex]
+    return print("I deleted %s off your list" % taskThatIsGettingDeleted)
 
 
 def determineTask(choice):
@@ -53,16 +68,13 @@ def determineTask(choice):
     if (choice == "1"):
         whatTheyChose = addFunction()
     elif (choice == "2"):
-        whatTheyChose = ""
-
+        whatTheyChose = delFunction()
+    elif (choice == "3"):
+        whatTheyChose = viewFunction()
     else:
         print("Bad key")
 
-    # elif (userChoices == "3"):
-
     # elif (userChoices == "q"):
-
-    # else:
 
     whatTheyChose = choice
     return whatTheyChose
