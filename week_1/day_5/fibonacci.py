@@ -4,8 +4,19 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 # Pseudocode
-number_list = []
-for number in range(1, 101):
-    if (number % 2 == 0):
-        number_list.append(number)
-print(number_list)
+first, second = 0, 1
+sum = 0
+
+while True:
+    first, second = second, first + second
+    if second >= 4000000:
+        break
+    elif second % 2 == 0:
+        sum += second
+print(sum)
+
+# number_list = []
+# for number in range(1, 101):
+#     if (number % 2 == 0):
+#         number_list.append(number)
+# print(number_list)
