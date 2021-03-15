@@ -22,7 +22,6 @@ car = {
     "image": "http://bit.ly/3qTUNKy",
     "year": "",
     "engineChoices": [{"v4": {"horsepower": 230}}, {"v6": {"horsepower": 300}}, {"v8": {"horsepower": 400}}, {"v12": {"horsepower": 900}}],
-    "colors": ['red', 'black', 'blue', 'gray'],
 }
 
 # print(digitalCraftsStudent["computer"][0])
@@ -42,9 +41,12 @@ if ("trim" in car):
     print(True)
 else:
     print(False)
+print("trim" in car.values())
 
 # 4
 # Added "colors"
+car.update({'colors': ["red", "blue", "silver", "purple"]})
+print(car)
 
 # 5
 # Added shortened url to "image" value
