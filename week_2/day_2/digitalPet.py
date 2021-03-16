@@ -1,3 +1,30 @@
+class Spider:
+    def __init__(self, name, strength, defense, hp):
+        self.name = name
+        self.strength = strength
+        self.defense = defense
+        self.hp = hp
+    pass
+
+
+# Dot notation
+peter = Spider("Peter", 20, 10, 100)
+mercado = Spider("Mercado", 25, 20, 90)
+billybob = Spider("Billybob", 0, 0, 10)
+print(peter.name)
+print(peter.strength)
+print(peter.defense)
+print(peter.hp)
+print(mercado.name)
+print(mercado.strength)
+print(mercado.defense)
+print(mercado.hp)
+print(billybob.name)
+print(billybob.strength)
+print(billybob.defense)
+print(billybob.hp)
+# mercado = Spider()
+
 petSpider = {
     "name": "peter",
     "strength": 20,
