@@ -20,8 +20,6 @@ class Building:
         self.capacity = capacity
         self.sqft = sqft
 
-    def specs()
-
 
 def createBuilding():
     counter = 1
