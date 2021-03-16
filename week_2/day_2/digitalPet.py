@@ -7,10 +7,21 @@ class Spider:
     pass
 
 
+class OmegaSpider:
+    def __init__(self, name, strength, defense, hp, size):
+        self.name = name
+        self.strength = strength
+        self.defense = defense
+        self.hp = hp
+        self.size = size
+    pass
+
+
 # Dot notation
 peter = Spider("Peter", 20, 10, 100)
 mercado = Spider("Mercado", 25, 20, 90)
 billybob = Spider("Billybob", 0, 0, 10)
+beelzebub = OmegaSpider("Beelzebub", 1000, 200, 1000, "10 miles")
 print(peter.name)
 print(peter.strength)
 print(peter.defense)
@@ -23,6 +34,8 @@ print(billybob.name)
 print(billybob.strength)
 print(billybob.defense)
 print(billybob.hp)
+print(beelzebub.name)
+print(beelzebub.size)
 # mercado = Spider()
 
 petSpider = {
