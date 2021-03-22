@@ -5,23 +5,6 @@
 
 # create a function that asks you to give the user a name, and give the user an age, and will then create the user for you, and print it to the screen. The user will have a choice to either be a temp user or a user
 
-# 2
-# Create a building class
-# building class will height
-# capacity
-# sqft
-# commercial or residential SKIP FOR NOW
-# commercial
-# Ask the user to create a building
-# they will enter in height
-# capacity (people)
-# sqft
-
-# 5 instances of a building
-# print out the specs of the building everytime a building is made
-# print statement needs to be a method
-
-
 class User:
     def __init__(self, name, age):
         self.name = name
