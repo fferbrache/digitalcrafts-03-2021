@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Form 1 -->
+  <form>
+    <fieldset>
+      <legend>User Information</legend>
+      <p>
+        <label for="user-name"> User Name </label>
+        <input type="text" name="user-name" id="user-name" />
+      </p>
+    </fieldset>
+    <input type="submit" id="submit-button" value="submit" />
+  </form>
+  <!-- Form 2 -->
+  <form>
+    <fieldset>
+      <legend>Do you have programming experience?</legend>
+      <p>
+        <label>
+          <input type="radio" id="yes" name="question" value="yes" checked /> Yes
+        </label>
+      </p>
+      <p>
+        <label> <input type="radio" id="no" name="question" value="no" /> No </label>
+      </p>
+    </fieldset>
+
+  </form>
+  <!-- Form 3 -->
+  <form>
+    <fieldset>
+      <legend>What languages are you familiar with? (Choose More than One)</legend>
+      <p>
+        <label> <input type="checkbox" checked /> HTML </label>
+      </p>
+      <p>
+        <label> <input type="checkbox" /> CSS </label>
+      </p>
+      <p>
+        <label> <input type="checkbox" /> JavaScript </label>
+      </p>
+      <p>
+        <label> <input type="checkbox" /> Python </label>
+      </p>
+      <p>
+        <label> <input type="checkbox" /> React </label>
+      </p>
+      <p>
+        <label> <input type="checkbox" /> SQL </label>
+      </p>
+      <p>
+        <label> <input type="checkbox" /> Git </label>
+      </p>
+    </fieldset>
+  </form>
+  <!-- Form 4 -->
+  <form>
+    <fieldset>
+      <legend>Favorite languages</legend>
+      <label for="genre-select"> What's your favorite language? </label>
+      <select name="genre" id="genre-select">
+        <option value="" disabled selected>--Choose One--</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="react">React</option>
+        <option value="sql">SQL</option>
+        <option value="git">Git</option>
+      </select>
+    </fieldset>
+  </form>
+</body>
+
+</html>
