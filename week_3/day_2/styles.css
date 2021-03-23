@@ -14,9 +14,9 @@ body {
 
 .exampleWeGonnaUse {
   background-color: red;
-  height: 100px;
-  width: 100px;
-  padding: 20px 20px 20px 20px;
+  height: 200px;
+  width: 200px;
+  padding: 20px;
 }
 
 .paragraphInsideTheDiv {
