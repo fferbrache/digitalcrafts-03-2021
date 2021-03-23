@@ -20,10 +20,10 @@
   text-align: center;
 }
 
-.voice{
+.microphone{
   height:20px;
   position:relative;
-  bottom:20px;
+  bottom:23px;
   left:125px;
 }
 
