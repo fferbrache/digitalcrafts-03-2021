@@ -11,8 +11,19 @@
   flex-wrap: wrap-reverse;
   /* values: (default: nowrap), wrap, wrap-reverse */
 }
-.basic-flex-justify-content {
+.basic-flex-justify-content-space-around {
   display: flex;
   justify-content: space-around;
   /* values: (default: flex-start), center, flex-end, space-around, space-between */
+}
+.basic-flex-justify-content-space-between {
+  display: flex;
+  justify-content: space-between;
+  /* values: (default: flex-start), center, flex-end, space-around, space-between */
+}
+
+.basic-flex-align-items {
+  display: flex;
+  align-items: center;
+  /* values: (default: stretch), flex-start, baseline, center*/
 }
