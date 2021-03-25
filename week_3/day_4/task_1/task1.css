@@ -1,0 +1,36 @@
+.main-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 120px 120px 120px;
+  grid-template-rows: 60px 60px;
+  grid-template-areas:  
+  "nav main content1"
+  "content2 content3 footer"
+  ;
+  grid-gap: 5px;
+  background-color: blueviolet;
+}
+nav {
+  grid-area: nav;
+  background-color: red;
+}
+main {
+  grid-area: main;
+  background-color: #37BEB0 ;
+}
+footer {
+  grid-area: footer;
+  background-color: blue;
+}
+#content-div-1 {
+  grid-area: content1;
+  background-color: aquamarine;
+}
+#content-div-2 {
+  grid-area: content2;
+  background-color: azure;
+}
+#content-div-3 {
+  grid-area: content3;
+  background-color: bisque;
+}

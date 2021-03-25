@@ -1,0 +1,52 @@
+.main-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-template-rows: 40px 40px;
+  grid-template-areas:  
+  "section1 section2 section3 section4 section5"
+  "section6 section7 section8 section9 section10"
+  ;
+  background-color: bisque;
+  font-size: 8px;
+}
+#section-1 {
+  grid-area: section1;
+  background-color: aquamarine;
+}
+#section-2 {
+  grid-area: section2;
+  background-color: red;
+}
+#section-3 {
+  grid-area: section3;
+  background-color: blue;
+}
+#section-4 {
+  grid-area: section4;
+  background-color: skyblue;
+}
+#section-5 {
+  grid-area: section5;
+  background-color: orange;
+}
+#section-6 {
+  grid-area: section6;
+  background-color: purple;
+}
+#section-7 {
+  grid-area: section7;
+  background-color: brown;
+}
+#section-8 {
+  grid-area: section8;
+  background-color: gold;
+}
+#section-9 {
+  grid-area: section9;
+  background-color: silver;
+}
+#section-10 {
+  grid-area: section10;
+  background-color: aquamarine;
+}
