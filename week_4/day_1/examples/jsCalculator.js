@@ -25,15 +25,22 @@
 function calculate(operand, num1, num2) {
   // operand = ""
   if (operand == "add") {
-    console.log(num1 + num2);
+    answer = num1 + num2
+    console.log(`You chose ${operand} and your answer is ${answer}`);
   } else if (operand == "subtract") {
-    console.log(num1 - num2);
+    answer = num1 - num2
+    console.log(`You chose ${operand} and your answer is ${answer}`);
   } else if (operand == "multiply") {
-    console.log(num1 * num2);
+    answer = num1 * num2
+    console.log(`You chose ${operand} and your answer is ${answer}`);
   } else if (operand == "divide") {
-    console.log(num1 / num2);
+    answer = num1 / num2
+    console.log(`You chose ${operand} and your answer is ${answer}`);
   } else {
     console.log("Error")
   }
 };
+calculate("add", 5, 2)
+calculate("subtract", 5, 2)
+calculate("multiply", 5, 2)
 calculate("divide", 5, 2)
