@@ -1,0 +1,10 @@
+Create an 8x8 chess board
+
+if square is white, print blank space
+if square is colored, print a hash
+if row is greater than 8, print a new line /n
+
+ # # # #
+# # # # 
+ # # # #
+# # # # 
