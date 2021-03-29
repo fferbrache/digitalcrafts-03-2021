@@ -23,7 +23,6 @@
 // and the correct answer
 
 function calculate(operand, num1, num2) {
-  // operand = ""
   if (operand == "add") {
     answer = num1 + num2
     console.log(`You chose ${operand} and your answer is ${answer}`);
