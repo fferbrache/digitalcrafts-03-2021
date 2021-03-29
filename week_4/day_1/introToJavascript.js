@@ -35,7 +35,7 @@ function sumNumbers(num1, num2) {
 
   let number = 9;
   let array = [1,2,3]
-  for (let number = 0; loopNumber < array.length; loopNumber++) {
+  for (let loopNumber = 0; loopNumber < array.length; loopNumber++) {
     console.log("inside the loop", number)
   }
   console.log("outside the loop", number)
@@ -46,3 +46,28 @@ console.log("this is the sum " + sumNumbers(1, 2));
 // for (let slice = 0; slice < pizza.length; slice++) {
 //   // does stuff here
 // }
+
+// Lis...jk arrays
+// list = []
+// javascript syntax for a list (now called an Array)
+let numbersInAnArray = [1,2,3];
+let namesInAnArray = [
+  "kendall",
+  "gill",
+  "joey",
+  "carlo",
+  "tay",
+  "taylor",
+  "whitney",
+  "jessica"
+]
+// we access them the same way we do in python
+// nameOfTheList[index]
+// prints out "gill"
+console.log(namesInAnArray[1])
+// prints out "tay"
+console.log(namesInAnArray[4])
+// prints out "jessica"
+console.log(namesInAnArray[7])
+
+
