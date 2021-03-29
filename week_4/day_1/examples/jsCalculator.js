@@ -17,7 +17,23 @@
 //   do the final thing
 // }
 
-calculate("multiply", num1, num2);
+// calculate("multiply", num1, num2);
 // print out the mseesage of whatever operation they did
 // console.log("You did multiply and your answer is ${answerHere}")
 // and the correct answer
+
+function calculate(operand, num1, num2) {
+  // operand = ""
+  if (operand == "add") {
+    console.log(num1 + num2);
+  } else if (operand == "subtract") {
+    console.log(num1 - num2);
+  } else if (operand == "multiply") {
+    console.log(num1 * num2);
+  } else if (operand == "divide") {
+    console.log(num1 / num2);
+  } else {
+    console.log("Error")
+  }
+};
+calculate("divide", 5, 2)
