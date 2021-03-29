@@ -35,3 +35,5 @@ while (length_second_num < 1):
 
 result = allowed_operators[symbol](float(first_num), float(second_num))
 print(result)
+
+print(divmod(19, 5))
