@@ -70,4 +70,51 @@ console.log(namesInAnArray[4])
 // prints out "jessica"
 console.log(namesInAnArray[7])
 
+// python dictionary
+// dictionary1 = {"key": "value"}
 
+// new syntax, we now call this an object, that has a key value. the key is not in quotation marks
+// the value can be whatever value type we want
+let classObject = {
+  name: "kendall",
+  name: "gill",
+  name: "joey",
+  name: "carlo",
+  name: "tay",
+  name: "taylor",
+  name: "whitney",
+  name: "jessica"
+}
+// Python
+// print(classObject["name"])
+// JavaScript
+console.log(classObject.name)
+
+let complexObject = {
+  jessica: {
+    name: "jessica",
+    hometown: "Houston",
+  },
+  whitney: {
+    name: "whitney",
+    hometown: "Houston",
+  },
+  tay: {
+    name: "tay",
+    hometown: "Houston",
+  },
+  joey: {
+    name: "joey",
+    hometown: "Houston",
+  },
+  michael: {
+    name: "michael",
+    // hometown: "Houston",
+  },
+};
+// we can reassign values for keys by just calling the key and giving it a new value
+complexObject.michael.hometown = "not houston"
+
+// we can access values of an object by referencing their keys with dot notation
+console.log(classObject.name)
+console.log(complexObject.michael.hometown)
