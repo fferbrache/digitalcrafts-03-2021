@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+</head>
+
+<body id="root">
+
+</body>
+
+</html>
+<script>
+  function addDiv() {
+    const root = document.getElementById("root")
+    const newDiv = document.createElement("div")
+    newDiv.className = "main-container"
+    console.log(newDiv)
+    const newListItem1 = document.createElement("li")
+    newListItem1.innerText = "Name"
+    const newListItem2 = document.createElement("li")
+    newListItem2.innerText = "Hometown"
+    const newListItem3 = document.createElement("li")
+    newListItem3.innerText = "Occupation"
+    const newListItem4 = document.createElement("li")
+    newListItem4.innerText = "Favorite Food"
+    const newListItem5 = document.createElement("li")
+    newListItem5.innerText = "Fun Fact"
+    const newList = document.createElement("ul")
+    const newInput = document.createElement("input")
+    const newRadio = document.createElement("input")
+    newList.append(newListItem1, newListItem2, newListItem3, newListItem4, newListItem5)
+    newDiv.append(newList)
+    newDiv.append(newRadio)
+    newRadio.type = "radio"
+    newDiv.append(newInput)
+    root.append(newDiv)
+  }
+  addDiv()
+</script>
+
+<!-- create a div with a class name of main-container -->
+<!-- create an unordered list with 5 list items on it -->
+<!-- all the list items are created using javascript -->
+<!-- create an input field -->
+<!-- create a radio input field using javascript -->
+<!-- append all created stuff to the div -->
