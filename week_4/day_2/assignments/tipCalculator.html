@@ -35,6 +35,11 @@
     <button type='button' onclick="tipCalc()">Calculate Total</button>
     <h3>The total amount with tip is: $ <span class="total"></span>
   </div>
+  <ul id="list">
+    <!-- document.createElement("li") -->
+    <!-- document.innerText(tipAmount) -->
+    <!-- document.append(something) -->
+  </ul>
   <script>
     // add your tip calc function here
     function tipCalc() {
@@ -46,6 +51,11 @@
       console.log(typeof totalAmount)
       const target = document.querySelector(".total")
       target.innerHTML = totalAmount
+      const newListItem = document.createElement("li")
+      newListItem.innerText = totalAmount - billAmount
+      console.log(tipAmount)
+      const list = document.getElementById("list")
+      list.append(newListItem)
     }
   </script>
 </body>
