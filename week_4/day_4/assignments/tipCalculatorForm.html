@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="formContainer">
+    <table cellpadding='2px' cellspacing='5px'>
+      <h1>Welcome to the Tip Calculator</h1>
+      <th></th>
+      <tr>
+        <td>Bill Amount (in Dollars): </td>
+        <td><span>$ <input type='text' id='bill' placeholder='ie. 50'></span></td>
+      </tr>
+      <tr>
+        <td>Tip Amount (in %): </td>
+        <td>
+          <span>% <input type='text' id='tip' placeholder='ie. 15'></span>
+        </td>
+      </tr>
+      <td></td>
+      <tr>
+        <td></span></h3>
+        </td>
+      </tr>
+    </table>
+    <button type='button' onclick="tipCalc()">Calculate Total</button>
+    <h3>The total amount with tip is: $ <span class="total"></span>
+  </div>
+  <ul id="list">
+    <!-- document.createElement("li") -->
+    <!-- document.innerText(tipAmount) -->
+    <!-- document.append(something) -->
+  </ul>
+  <script>
+    // add your tip calc function here
+    function tipCalc() {
+      const billAmount = Number(document.querySelector("#bill").value)
+      console.log(typeof billAmount)
+      const tipAmount = Number(document.querySelector("#tip").value)
+      console.log(typeof tipAmount)
+      const totalAmount = tipAmount * .01 * billAmount + billAmount
+      console.log(typeof totalAmount)
+      const target = document.querySelector(".total")
+      target.innerHTML = totalAmount
+      const newListItem = document.createElement("li")
+      newListItem.innerText = totalAmount - billAmount
+      console.log(tipAmount)
+      const list = document.getElementById("list")
+      list.append(newListItem)
+    }
+  </script>
+</body>
+
+</html>
