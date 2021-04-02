@@ -5,11 +5,6 @@
 // - Keep floats floats and numbers numbers.
 // - Negative numbers should be kept negative
 
-// 485 = 584
-// 0076 = 67
-// -756.65 = -56.657
-// 7560.00 = 657
-
 const integerReversal = (num) => {
   const removeZero = num.toString().replace(/^0+(\d)|(\d)0+$/gm, "$1$2");
   const reversedString = removeZero.split('').reverse();
