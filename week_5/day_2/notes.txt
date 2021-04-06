@@ -1,0 +1,34 @@
+DigitalCrafts Day 22
+4/6/21
+
+Review Weather App
+API Key Security
+create .gitignore file
+create new file, include export
+export const apiKey = "123123"
+import apiKey from "../api"
+
+Pokemon Example
+First Goal is to see if you can get the information (Postman) and show it on the screen
+We used Postman
+
+Promises
+PromiseState: "fulfilled"
+PromiseResult: Response
+
+resolved, pending, objective --> states in programming
+promise is returning us something that is an object
+whenever you can use a ".then()" on an  object, it is a Thenable object
+promises are filled with .then()
+
+.json() takes something and makes it into json
+
+promise --> then I will see it is fulfilled --> then I will convert it into json
+
+syntactic sugar
+
+Promise.all() makes the program run faster
+
+we will see this more when we get to node and have to do "call backs"
+
+
