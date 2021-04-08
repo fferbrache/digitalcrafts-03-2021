@@ -1,19 +1,83 @@
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+body {
+  background-image: url(images/bigSur.jpg);
+  min-height: 100%;
+  min-width: 100%;
 }
 
-.card {
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #fbe7c6;
+}
+
+.people-card {
   color: antiquewhite;
   text-align: center;
   background-color: #5885af;
   margin-bottom: 10px;
   border-radius: 15px;
   padding: 30px;
+  height: 200px;
+  width: 250px;
 }
 
-button {
-  height: 50px;
-  width: 100px;
+.book-card {
+  color: antiquewhite;
+  text-align: center;
+  background-color: #5885af;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding: 30px;
+  height: 200px;
+  width: 250px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.people-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.people-button {
+  padding: 5px;
+  background-color: #fbe7c6;
+  font-size: 1rem;
+  margin-top: 5px;
+  width: 10rem;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.book-button {
+  padding: 5px;
+  background-color: #fbe7c6;
+  font-size: 1rem;
+  margin-top: 5px;
+  width: 10rem;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.clear-button {
+  padding: 5px;
+  background-color: #fbe7c6;
+  font-size: 1rem;
+  margin-top: 5px;
+  width: 10rem;
+  border-radius: 12px;
+  align-items: center;
 }
