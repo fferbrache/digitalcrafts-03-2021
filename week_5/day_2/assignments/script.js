@@ -4,10 +4,8 @@ const header = document.querySelector(".header");
 const fetchPeople = async () => {
   let response = await fetch("https://fakerapi.it/api/v1/persons?_quantity=30");
   let json = await response.json();
-  console.log(json);
   counter = 0
   for (let people of json.data) {
-    console.log(people)
     const tgtPeople = document.querySelector(".people-container")
     const peopleCard = document.createElement("div");
     peopleCard.className = "people-card"
@@ -35,10 +33,8 @@ const tgtBookContainer = document.querySelector(".book-container");
 const fetchBooks = async () => {
   let response = await fetch("https://fakerapi.it/api/v1/books?_quantity=30");
   let json = await response.json();
-  console.log(json);
   counter = 0
   for (let people of json.data) {
-    console.log(people)
     const tgtBooks = document.querySelector(".book-container")
     const bookCard = document.createElement("div");
     bookCard.className = "book-card"
