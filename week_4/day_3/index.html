@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="header">Tip Calculator</h1>
+      <label for="cost">Cost ($)</label>
+      <input type="text" class="cost" name="cost" id="costycost" placeholder="bill amount">
+      <!-- <label for="tax">Tax (%)</label>
+      <input type="text" class="cost" name="tax" placeholder="Tax"> -->
+      <label for="tip">Tip (%)</label>
+      <input type="text" class="tip" name="tip" id="tipytip" placeholder="tip percentage">
+      <button type="button" onclick="tipCalc()">Calculate Total</button>
+      <!-- onclick is an "event-handler" -->
+      <h3>Total amount of the bill is: $</h3>
+      <h3 class="total"></h3>
+      <ul class="prev-tips">
+
+      </ul>
+
+    </div>
+  </div>
+</body>
+<script>
+  function newFunction(num) {
+    return "$" + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+  }
+
+  function tipCalc() {
+    const billCost = document.querySelector("#costycost").value
+    // for (let input of billCost) {
+    //   console.log(input)
+    // }
+    console.log({
+      billCost
+    })
+    const billCostConverted = parseInt(billCost)
+
+    const tipAmount = document.querySelector("#tipytip").value
+    const tipAmountConverted = parseInt(tipAmount)
+
+    const tipTotal = billCostConverted * (tipAmountConverted / 100)
+    const amountPaid = billCostConverted + tipTotal
+    const convertedAmountPaid = newFunction(amountPaid)
+    const displayValue = document.querySelector(".total")
+    displayValue.innerText = convertedAmountPaid
+
+    const grabList = document.querySelector(".prev-tips")
+    const listItem = document.createElement("li")
+    listItem.innerText = tipTotal
+    grabList.append(listItem)
+  }
+</script>
+
+</html>

@@ -1,0 +1,6 @@
+Make a todo list in html and css and js
+You cannot hard code any event listeners to the html, this has to be done with JS
+Has to have styling and layout
+You should be able to add a task by entering it into an input filed, and hitting a ADD TASK button
+each task will have a checkbox next to it that you can check or uncheck
+All the html elements need to be created in JS besides the starter files
