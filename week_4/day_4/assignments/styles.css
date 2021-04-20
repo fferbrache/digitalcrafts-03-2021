@@ -1,7 +1,7 @@
 body {
-  background-image: url("images/cash.jpg");
-  background-color: #cccccc;
-  color: yellow;
+  /* background-image: url("images/cash.jpg"); */
+  background-color: whitesmoke;
+  color: black;
   display: flex;
   flex-direction: column;
   height: 100vh;
