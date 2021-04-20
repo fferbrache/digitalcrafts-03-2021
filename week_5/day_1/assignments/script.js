@@ -28,15 +28,15 @@ const getWeather = async () => {
   humidityValue.innerHTML = formattedJson.main.humidity
   humidity.append(humidityValue)
 
+  mainDiv.append(city, temp, humidity)
+  
   const map = document.createElement("iframe")
   map.width = "600"
   map.height = "450"
   map.style.border = "0"
   map.loading = "lazy"
   map.src = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCgYqkp1_NlaPC-HiJL7q5Guxhg-kLSuyE
-  &q=,${cityName}+GA`
+  &q=,Atlanta+GA`
 
-
-  mainDiv.append(city, map, temp, humidity)
 }
 submit.addEventListener("click", ()=> getWeather())
