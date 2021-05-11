@@ -48,10 +48,17 @@ class App extends Component {
           </div>
         )}
         </p>
-        <input type="text" onChange={(e)=>console.log(e.target.value)}/>
         <p>Counter { counter }</p>
-        <button onClick={(e)=>console.log(e)}>Add</button>
-        <button>Subtract</button>
+        <button onClick={()=>
+        this.setState({
+          counter: this.state.counter + 1,
+        })}
+        >Add</button>
+        <button onClick={()=>
+        this.setState({
+          counter: this.state.counter - 1,
+        })}
+        >Subtract</button>
       </>
     );
   }
