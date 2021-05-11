@@ -48,6 +48,14 @@ class App extends Component {
           </div>
         )}
         </p>
+        <button onClick={()=>
+        this.setState({
+          itIsRainingInHouston: !itIsRainingInHouston,
+        })}
+        >
+          { itIsRainingInHouston ? "Beautiful Sunny Day" : "Ahh its raining"}
+          </button>
+          
         <p>Counter { counter }</p>
         <button onClick={()=>
         this.setState({
