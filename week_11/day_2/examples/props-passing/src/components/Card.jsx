@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 
 class Card extends Component {
+  state = {
+    flip: false
+  }
   render() {
-    console.log(this.props.pokemon)
+    // console.lof(this.props.pokemon)
+    const {hp, id, name, sprites} = this.props.pokemon
     return (
       <div>
-        <h1>Card</h1>
+        <img src={this.state.flip ? sprites.back : sprites.front} alt="" />
+        <h2>{name}</h2>
+        <p>{hp}</p>
+        <p>{id}</p>
+        <button onClick={() => this.setState({flip: !this.state.flip})}>Flip</button>
       </div>
     );
   }
