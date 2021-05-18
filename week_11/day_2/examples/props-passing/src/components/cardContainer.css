@@ -1,0 +1,20 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  place-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pokemon-card {
+  background-color: #e7f2f8;
+  margin: 1rem;
+  height: 55vh;
+  width: 12rem;
+  border-radius: 10px;
+}
+
+.pokemon-card button {
+  border-radius: 10px;
+  height: 40px;
+  width: 50%;
+}
