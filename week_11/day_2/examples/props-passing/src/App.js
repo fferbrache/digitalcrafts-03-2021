@@ -1,5 +1,5 @@
 import './App.css';
-import CardContainer from './components/CardContainer';
+import CardContainer from './components/CardContainer.jsx';
 import { data }from "./data/data"
 
 function App() {
