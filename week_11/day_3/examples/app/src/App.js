@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Forms React</h1>
+      <h1 className="shipping-form-header">Forms React</h1>
       <div className="shipping-form-container">
       <form action="" className="shipping-form">
         <input className="shipping-input-text" type="text" placeholder="First Name"/>

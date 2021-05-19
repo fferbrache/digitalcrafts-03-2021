@@ -1,7 +1,10 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+}
 
+.shipping-form-header {
+  font-weight: lighter;
 }
 
 .shipping-form {
