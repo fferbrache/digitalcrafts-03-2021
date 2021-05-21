@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Counter from './Counter'
 
 export default function Greeter () {
   // we are setting the initial state here
@@ -18,6 +19,7 @@ export default function Greeter () {
       <div>
         <h1>Welcome, {greet}</h1>
         <input type="text" onChange={handleChange} />
+        <Counter greet={greet} />
       </div>
     )
   }
