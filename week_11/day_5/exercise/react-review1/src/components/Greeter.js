@@ -12,6 +12,7 @@ export default function Greeter () {
     //   greet: e.target.value
     // })
   }
+  console.log(greet)
 
     return (
       <div>
