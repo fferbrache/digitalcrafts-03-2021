@@ -1,1 +1,1 @@
-# Redux Tutorial
+# Intro to Redux

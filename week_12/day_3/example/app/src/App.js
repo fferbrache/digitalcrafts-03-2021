@@ -1,9 +1,13 @@
+import React, { useState } from "react";
 import './App.css';
+import Counter from './components/Counter';
+import ComponentTwo from "./components/ComponentTwo";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Counter />
+      <ComponentTwo />
     </div>
   );
 }
