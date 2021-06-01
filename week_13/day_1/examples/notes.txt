@@ -1,0 +1,51 @@
+Tues 6/1/21
+Combined Reducers 
+
+npx create-react-app combine-reducers
+cd combine-reducers
+
+yarn add react-redux redux combine-reducers 
+yarn add redux-logger
+
+npm start
+
+remove boiler plate
+
+Redux steps
+In index.js file
+import provider
+create a store, applyMiddleware
+import logger
+import rootReducer
+
+Create folders
+action-types
+actions
+reducers
+components
+
+in reducers create rootReducer.js
+
+in rootReducer.js file
+previously we did intialState followed by function and export default
+Now we import {combineReducers} from "reducers
+cont rootReducer = combineReducers({
+
+})
+
+export default rootReducer;
+
+created a new file in reducers called counterReducer.js
+const initialState = 0
+const counter = (state=initialState.action) => {
+  switch (action.typ) {
+    case "INCREMENT":
+      return state + 1
+    case "DECREMENT":
+      return state - 1
+    default:
+      return state
+  }
+};
+
+export default counter;
