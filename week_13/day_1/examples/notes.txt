@@ -28,7 +28,8 @@ in reducers create rootReducer.js
 
 in rootReducer.js file
 previously we did intialState followed by function and export default
-Now we import {combineReducers} from "reducers
+Now we import {combineReducers} from "reducers";
+
 cont rootReducer = combineReducers({
 
 })
@@ -49,3 +50,71 @@ const counter = (state=initialState.action) => {
 };
 
 export default counter;
+
+in actions folder create counter-actions.js file
+import { INCREMENT, DECREMENT } from "../action-types/counter-action-types";
+
+export const increment = (dispatch) => {
+  return dispatch({
+    type: "INCREMENT",
+  });
+};
+export const decrement = (dispatch) => {
+  return dispatch({
+    type: "DECREMENT",
+  });
+};
+
+in action-types folder create counter-action-types.js file
+export const INCREMENT = "INCREMENT"
+export const DECREMENT = "DECREMENT"
+
+in App.js (Make code appear on screen)
+import { useDispatch, useSelector } from "react-redux";
+import { increment, decrement } from "./actions/counter-actions";
+import {changeToKendall, changeToPatrick} from "./actions/counter-actions";
+in function
+const dispatch = useDispatch()
+const counter = useSelector((state) => state.counter);
+return
+<p>{counter}</p>
+<button onclick={() => increment(dispatch)}>INCREMENT</button>
+<button onclick={() => decrement(dispatch)}>DECREMENT</button>
+<button>Change to Kendall</button>
+<button>Change to Patrick</button>
+
+in reducers create userReducer.js
+import { CHANGE_TO_KENDALL, CHANGE_TO_PATRICK } FROM "../action-types/user-action-types";
+const initialState = ""
+const userName = (state = initialState.action){
+  switch(action.type){
+    case "CHANGE_TO_PATRICK":
+      return state = "Patrick"
+    case "CHANGE_TO_KENDALL":
+      return state = "Kendall"
+    default:
+      return state
+  }
+};
+
+in action-types create user-action-types.js file
+export const CHANGE_TO_KENDALL = "CHANGE_TO_KENDALL"
+export const CHANGE_TO_PATRICK = "CHANGE_TO_PATRICK"
+
+in user-actions.js
+
+in rootReducer.js
+
+in App.js dispatch an action
+
+UI -> dispatch -> reeducer -> UI 
+
+middleware intercepts an action before sending it to dispatcher, for example: an API call 
+Interview Question about changing state
+Use Middleware.
+What would you use?
+Thunk, (can also use sagas but be prepared if mentioning)
+
+"payload" used for information that is dynamic instaead of "type"
+
+A thunk is a function that returns a variable
